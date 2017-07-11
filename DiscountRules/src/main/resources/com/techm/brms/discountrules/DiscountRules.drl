@@ -8,6 +8,7 @@ when
        p:OrderDO(amount >0 && amount <= 500)
 then
        double f=p.getAmount()*0.05d;
+       p.setDiscount(f);
        System.out.println("Discounted value:"+f);       
 end
 
@@ -19,6 +20,7 @@ when
        p:OrderDO(amount >=501 && amount <= 1000)
 then
        double f=p.getAmount()*0.07d;
+       p.setDiscount(f);
        System.out.println("Discounted value:"+f);       
 end
 
@@ -30,5 +32,6 @@ when
        p:OrderDO(amount >=1001 && amount <= 5000)
 then
        double f=p.getAmount()*0.10d;
+       p.setDiscount(f);
        System.out.println("Discounted value:"+f);       
 end
