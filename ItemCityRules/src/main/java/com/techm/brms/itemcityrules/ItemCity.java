@@ -19,16 +19,11 @@ public enum City {
    private java.math.BigDecimal sellPrice;
    private City purchaseCity;
    private Type typeofItem;
+   
    public ItemCity()
    {
    }
-   public enum City {
-      PUNE, NAGPUR
-   }
    
-   public enum Type {
-      GROCERIES, MEDICINES, WATCHES, LUXURYGOODS
-   }
 
    public City getPurchaseCity() {
       return purchaseCity;
