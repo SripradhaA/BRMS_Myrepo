@@ -2,6 +2,7 @@ package com.techm.brms.driverriskrules;
 
 rule "One Driver Rules"
 no-loop false
+dialect "java"
 
 when
 	 dr : DriverDO(age >= 20 && age < 25)
@@ -12,6 +13,7 @@ end
 	
 rule "Two Driver Rules"
 no-loop false
+dialect "java"
    
 when
        dr : DriverDO(age >= 25 && age < 40)
@@ -23,6 +25,7 @@ end
 	
 rule "Three Driver Rules"
 no-loop false
+dialect "java"
 
 when
        dr : DriverDO(age >= 40 && age < 50)
@@ -33,6 +36,7 @@ end
 	
 rule "Four Driver Rules"
 no-loop false
+dialect "java"
 
 when
        $dr : DriverDO(age >= 50 && age < 60)
@@ -43,6 +47,7 @@ end
 	
 rule "Five Driver Rules"
 no-loop false
+dialect "java"
 
 when
        dr : DriverDO(age >= 60 && age < 65)
