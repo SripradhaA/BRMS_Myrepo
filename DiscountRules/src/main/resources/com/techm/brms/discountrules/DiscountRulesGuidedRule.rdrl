@@ -5,5 +5,7 @@ import java.lang.Number;
 rule "DiscountRulesGuidedRule"
 	dialect "mvel"
 	when
+		p : OrderDO( amount > 0 , amount <= 500 )
 	then
+		double f=p.getAmount()*0.05d;
 end
