@@ -1,2 +1,52 @@
 package com.techm.brms.driverriskrules;
 
+rule "One Driver Rules"
+no-loop false
+
+when
+	 dr : DriverDO( age >= 20 && age < 25 )
+then
+	dr.setRisk( 2 );
+        System.out.println("The risk is " + dr.getRisk());
+end
+	
+rule "Two Driver Rules"
+no-loop false
+   
+when
+       dr : DriverDO( age >= 25 && age < 40 )
+then
+       dr.setRisk( 4 );
+       System.out.println("The risk is "+dr.getRisk());
+end
+	
+	
+rule "Three Driver Rules"
+no-loop false
+
+when
+       dr : DriverDO( age >= 40 && age < 50 )
+then
+	dr.setRisk( 6 );
+        System.out.println("The risk is "+dr.getRisk());
+end
+	
+rule "Four Driver Rules"
+no-loop false
+
+when
+       $dr : DriverDO( age >= 50 && age < 60 )
+then
+	dr.setRisk( 8 );
+        System.out.println("The risk is "+dr.getRisk());
+end
+	
+rule "Five Driver Rules"
+no-loop false
+
+when
+       dr : DriverDO( age >= 60 && age < 65 )
+then
+	dr.setRisk( 10 );
+        System.out.println("The risk is "+dr.getRisk());
+end
