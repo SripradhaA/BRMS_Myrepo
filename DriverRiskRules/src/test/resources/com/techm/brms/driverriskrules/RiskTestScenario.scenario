@@ -15,20 +15,26 @@
       <name>dr</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>41</executionTimeResult>
+      <numberOfRulesFired>1</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>risk</fieldName>
-          <expected>8</expected>
+          <expected>2</expected>
+          <successResult>true</successResult>
+          <explanation>[dr] field [risk] was [8].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>dr</name>
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2017-07-11 10:26:13.100 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.techm.brms.driverriskrules</packageName>
