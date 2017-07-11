@@ -8,14 +8,42 @@ public class ItemCity implements java.io.Serializable
 {
 
    static final long serialVersionUID = 1L;
-
+public enum City {
+      PUNE, NAGPUR
+   }
+   
+   public enum Type {
+      GROCERIES, MEDICINES, WATCHES, LUXURYGOODS
+   }
    private java.math.BigDecimal localTax;
    private java.math.BigDecimal sellPrice;
-
+   private City purchaseCity;
+   private Type typeofItem;
    public ItemCity()
    {
    }
+   public enum City {
+      PUNE, NAGPUR
+   }
+   
+   public enum Type {
+      GROCERIES, MEDICINES, WATCHES, LUXURYGOODS
+   }
 
+   public City getPurchaseCity() {
+      return purchaseCity;
+   }
+   
+   public void setPurchaseCity(City purchaseCity) {
+      this.purchaseCity = purchaseCity;
+   }
+   public void setTypeofItem(Type typeofItem) {
+      this.typeofItem = typeofItem;
+   }
+   
+   public BigDecimal getLocalTax() {
+      return localTax;
+   }
    public java.math.BigDecimal getLocalTax()
    {
       return this.localTax;
