@@ -32,13 +32,25 @@ public enum City {
    public void setPurchaseCity(City purchaseCity) {
       this.purchaseCity = purchaseCity;
    }
+   
+   public java.math.BigDecimal getSellPrice()
+   {
+      return this.sellPrice;
+   }
+
+   public void setSellPrice(java.math.BigDecimal sellPrice)
+   {
+      this.sellPrice = sellPrice;
+   }
+   
+   public Type getTypeofItem() {
+      return typeofItem;
+   }
    public void setTypeofItem(Type typeofItem) {
       this.typeofItem = typeofItem;
    }
    
-   public BigDecimal getLocalTax() {
-      return localTax;
-   }
+   
    public java.math.BigDecimal getLocalTax()
    {
       return this.localTax;
@@ -49,15 +61,7 @@ public enum City {
       this.localTax = localTax;
    }
 
-   public java.math.BigDecimal getSellPrice()
-   {
-      return this.sellPrice;
-   }
-
-   public void setSellPrice(java.math.BigDecimal sellPrice)
-   {
-      this.sellPrice = sellPrice;
-   }
+   
 
    public ItemCity(java.math.BigDecimal localTax,
          java.math.BigDecimal sellPrice)
