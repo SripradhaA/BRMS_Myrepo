@@ -1,2 +1,34 @@
 package com.techm.brms.discountrules;
 
+rule "5 % discount rule"
+dialect "java"
+//ruleflow-group "DiscountRules"
+no-loop
+when
+       p:OrderDO(amount >0 && amount <= 500)
+then
+       double f=p.getAmount()*0.05d;
+       System.out.println("Discounted value:"+f);       
+end
+
+rule "7 % discount rule"
+//ruleflow-group "DiscountRules"
+dialect "java"
+no-loop
+when
+       p:OrderDO(amount >=501 && amount <= 1000)
+then
+       double f=p.getAmount()*0.07d;
+       System.out.println("Discounted value:"+f);       
+end
+
+rule "10 % discount rule"
+//ruleflow-group "DiscountRules"
+dialect "java"
+no-loop
+when
+       p:OrderDO(amount >=1001 && amount <= 5000)
+then
+       double f=p.getAmount()*0.10d;
+       System.out.println("Discounted value:"+f);       
+end
