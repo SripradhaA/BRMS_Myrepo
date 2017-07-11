@@ -1,2 +1,26 @@
 package com.techm.brms.itemcityrules;
 
+import java.math.BigDecimal;
+
+dialect "java"
+rule "Nagpur Medicine Item"
+   
+   when
+      item : ItemCity(purchaseCity == ItemCity.City.NAGPUR, 
+                      typeofItem == ItemCity.Type.MEDICINES)
+
+   then
+      BigDecimal tax = new BigDecimal(0.0);
+      item.setLocalTax(tax.multiply(item.getSellPrice()));
+end
+
+rule "Nagpur Groceries Item"
+   
+   when
+      item : ItemCity(purchaseCity == ItemCity.City.NAGPUR, 
+                      typeofItem == ItemCity.Type.GROCERIES)
+
+   then
+      BigDecimal tax = new BigDecimal(1.0);
+      item.setLocalTax(tax.multiply(item.getSellPrice()));
+end
