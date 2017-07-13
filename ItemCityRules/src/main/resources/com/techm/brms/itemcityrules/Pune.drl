@@ -20,6 +20,6 @@ rule "Pune Groceries Item"
                       typeofItem == ItemCity.Type.GROCERIES)
    
    then
-      BigDecimal tax = new BigDecimal(2.0);
+      BigDecimal tax = new BigDecimal(0.02);
       item.setLocalTax(tax.multiply(item.getSellPrice()));
 end
