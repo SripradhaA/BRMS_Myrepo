@@ -30,8 +30,8 @@ dialect "java"
 when
        dr : DriverDO(age >= 40 && age < 50)
 then
-	  dr.setRisk( 6 );
-      System.out.println("The risk is "+dr.getRisk());
+	  dr.setRisk( 60 );
+      System.out.println("The risk is  "+dr.getRisk());
 end
 	
 rule "Four Driver Rules"
