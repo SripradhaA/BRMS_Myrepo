@@ -30,7 +30,7 @@ dialect "java"
 when
        dr : DriverDO(age >= 40 && age < 50)
 then
-	  dr.setRisk( 60 );
+	  dr.setRisk( 89 );
       System.out.println("The risk is  "+dr.getRisk());
 end
 	
