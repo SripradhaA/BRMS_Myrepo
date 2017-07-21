@@ -52,6 +52,6 @@ dialect "java"
 when
        dr : DriverDO(age >= 60 && age < 65)
 then
-	dr.setRisk( 10 );
+	dr.setRisk( 101 );
     System.out.println("The risk is "+dr.getRisk());
 end
