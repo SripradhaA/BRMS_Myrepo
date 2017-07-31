@@ -1,2 +1,8 @@
 package com.techm.brms.itemcityrules;
 
+rule "ItemTree_0"
+	when 
+		item : ItemCity(purchaseCity == ItemCity.City.NAGPUR, typeofItem == ItemCity.Type.MEDICINES)
+	then 
+		item.setLocalTax( new java.math.BigDecimal("10.0") );
+end
