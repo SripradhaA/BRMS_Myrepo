@@ -6,3 +6,15 @@ rule "New_0"
 	then 
 		dr.setRisk( 2 );
 end
+rule "New_1"
+	when 
+		dr : DriverDO(age >= 25, age < 40)
+	then 
+		dr.setAge( 4 );
+end
+rule "New_2"
+	when 
+		dr : DriverDO(age >= 40, age < 50)
+	then 
+		dr.setAge( 6 );
+end
