@@ -10,11 +10,11 @@ rule "New_1"
 	when 
 		dr : DriverDO(age >= 25, age < 40)
 	then 
-		dr.setAge( 4 );
+		dr.setRisk( 4 );
 end
 rule "New_2"
 	when 
 		dr : DriverDO(age >= 40, age < 50)
 	then 
-		dr.setAge( 6 );
+		dr.setRisk( 0 );
 end
