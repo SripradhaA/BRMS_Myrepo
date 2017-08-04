@@ -7,7 +7,7 @@ no-loop
 when
        pp:OrderDO(amount >0 && amount <= 500)
 then
-       double f=p.getAmount()*0.05d;
+       double f=pp.getAmount()*0.05d;
        pp.setDiscount(f);
        System.out.println("Discounted value:"+f);       
 end
@@ -19,7 +19,7 @@ no-loop
 when
        pp:OrderDO(amount >=501 && amount <= 1000)
 then
-       double f=p.getAmount()*0.07d;
+       double f=pp.getAmount()*0.07d;
        pp.setDiscount(f);
        System.out.println("Discounted value:"+f);       
 end
@@ -31,7 +31,7 @@ no-loop
 when
        pp:OrderDO(amount >=1001 && amount <= 5000)
 then
-       double f=p.getAmount()*0.10d;
+       double f=pp.getAmount()*0.10d;
        pp.setDiscount(f);
        System.out.println("Discounted value:"+f);       
 end
