@@ -1,0 +1,9 @@
+package com.techm.brms.discountrules;
+
+import java.lang.Number;
+
+rule "DiscountGuidedRule2"
+	dialect "mvel"
+	when
+	then
+end
