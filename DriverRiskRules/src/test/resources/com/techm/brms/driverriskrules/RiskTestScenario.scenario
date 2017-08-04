@@ -16,17 +16,17 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>6</executionTimeResult>
+      <executionTimeResult>434</executionTimeResult>
       <numberOfRulesFired>1</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>risk</fieldName>
-          <expected>8</expected>
-          <actualResult>8</actualResult>
+          <expected>81</expected>
+          <actualResult>81</actualResult>
           <successResult>false</successResult>
-          <explanation>[dr] field [risk] was [8] expected [2].</explanation>
+          <explanation>[dr] field [risk] was [81] expected [8].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -35,7 +35,7 @@
       <anonymous>false</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2017-07-11 10:26:38.379 UTC</lastRunResult>
+  <lastRunResult>2017-08-04 10:05:02.441 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.techm.brms.driverriskrules</packageName>
